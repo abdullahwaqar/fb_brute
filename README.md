@@ -7,7 +7,6 @@ Created mainly for reading purposes.
 
 # Dependencies
 * Tor
-* Kali Linux OS
 
 # Usage
 `python main.py [-h] username wordlist`
