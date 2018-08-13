@@ -3,7 +3,6 @@ import time
 import argparse
 import threading
 import subprocess
-from platform import platform
 
 from include.browser import Browser
 from include.tor import TorManager
@@ -181,8 +180,6 @@ def main():
             engine.kill('Exitimg {}...{}'.format(engine.g,engine.n))
 
 if __name__ == '__main__':
-    if not 'kali' in platform():
-        exit('Kali Linux Required')
     if os.getuid():
         exit('root access required')
     else:
